@@ -12,6 +12,13 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+<StackPanel>
+    <!--<TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
+
+    <ListBox Items="{Binding Branches}" SelectedItem="{Binding SelectedBranch}"/>
+
+    <TextBlock Text="{Binding SelectedBranch}"/>
+
+    </StackPanel>
 
 </Window>

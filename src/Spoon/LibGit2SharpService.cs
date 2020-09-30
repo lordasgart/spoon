@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Spoon
 {
-    public class LibGit2SharpService
+    public class LibGit2SharpService : IGitService
     {
         private readonly SpoonOptions _spoonOptions;
         
